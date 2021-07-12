@@ -48,6 +48,7 @@ body{
 }
 .hero__image__container{
     width: 100%;
+    position: relative;
 }
 .hero__image{
     width: 100%;
@@ -56,6 +57,41 @@ body{
     font-size: 30px;
     color: #1d3557;
     margin: 20px 0;
+}
+
+.hero__image__shape,
+.hero__image__pattren{
+
+    position: absolute;
+    right: 0;
+    width: 100%;
+    z-index: -1;
+    
+}
+
+/* Explore Menu */
+.explore__menu__text{
+    font-size: 30px;
+    color: #1d3557;
+    margin: 20px 0;
+    text-align: center;
+
+}
+.food__menu__card{
+    width: 100%;
+    background-color:#fff;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+.food__image{
+    width: 100%;
+    border-radius: 8px 8px 0 0;
+}
+.food__menu__card__description{
+    padding: 20px;
+}
+.explore__menu__container{
+    margin-top: 50px;
 }
 
 @media (min-width: 768px) {
@@ -77,6 +113,12 @@ body{
     justify-content: space-between;
     gap: 10px;
 }
+.explore__menu__list{
+    display: flex;
+    gap: 8px;
+    margin-top: 50px;
+ }
+ 
 }
     
 @media (min-width: 1020px) {
