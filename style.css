@@ -63,7 +63,7 @@ body{
 .hero__image__pattren{
 
     position: absolute;
-    right: 0;
+    left: 0;
     top: 0;
     width: 100%;
     z-index: -1;
@@ -136,6 +136,32 @@ body{
     text-align: center;
 }
 
+/* stay update */
+.email__subcribe__container{
+    margin-top: 50px;
+}
+.email__subcribe__input__field{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.text-xl{
+    font-size: 30px;
+    color: #1d3557;
+    margin: 20px 0;
+}
+.email__input{
+    border: 1px solid #ee89a0;
+    background-color: #fcedf0;
+    color: #1d3557;
+    font-weight: 700;
+    border-radius: 4px;
+    padding: 10px;
+}
+.email__input::placeholder {
+    color: #bdbcbc;
+  }
+
 
 @media (min-width: 768px) {
 .navbar{
@@ -187,7 +213,6 @@ body{
     transform: skewY(-5deg);
  }
  .restaurants__description{
-     font-size: 40px;
      width: 100%;
  }
  .restaurants__container{
@@ -197,6 +222,13 @@ body{
  .restaurant__flex{
      width: 100%;
  }
+ 
+ .email__subcribe__container{
+     display: flex;
+     justify-content: center;
+ }
+ 
+ 
 }
     
 @media (min-width: 1020px) {
