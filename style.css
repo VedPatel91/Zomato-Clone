@@ -64,10 +64,11 @@ body{
 
     position: absolute;
     right: 0;
+    top: 0;
     width: 100%;
     z-index: -1;
     
-}
+} 
 
 /* Explore Menu */
 .explore__menu__text{
@@ -93,6 +94,48 @@ body{
 .explore__menu__container{
     margin-top: 50px;
 }
+.explore__menu__view__more{
+    display: flex;
+    justify-content: center;
+}
+
+/* restaurant grid */
+.restaurant__flex__row__one,
+.restaurant__flex__row__two{
+    width: 100%;
+    display: flex;
+    gap: 4px;
+}
+.restaurant__flex__row__one{
+    align-items: baseline;
+    margin-bottom: 4px;
+
+}
+.restaurant__1__image,
+.restaurant__2__image,
+.restaurant__3__image,
+.restaurant__4__image{
+    width: 100%;
+    height: 100%;
+    border-radius: 7px;
+}
+.restaurant__1,
+.restaurant__4{
+    width: 100%;
+    height: 150px;
+}
+.restaurant__2,
+.restaurant__3{
+    width: 120%;
+    height: 200px;
+}
+.restaurants__description{
+    font-size: 30px;
+    color: #1d3557;
+    margin: 20px 0;
+    text-align: center;
+}
+
 
 @media (min-width: 768px) {
 .navbar{
@@ -118,7 +161,42 @@ body{
     gap: 8px;
     margin-top: 50px;
  }
- 
+ #pizza__card{
+     margin-top: -20px;
+     margin-bottom: 30px;
+ }
+ .explore__menu__container{
+     position: relative;
+    
+ }
+ .explore__menu__gradient__bg{
+     position: absolute;
+    left: 0;
+    top: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background-image: linear-gradient(
+        to right,
+        #ff512f 0%,
+        #dd2476 51%,
+        #ff512f 100%
+    );
+    z-index: -3;
+    transform: skewY(-5deg);
+ }
+ .restaurants__description{
+     font-size: 40px;
+     width: 100%;
+ }
+ .restaurants__container{
+     display: flex;
+     align-items: center;
+ }
+ .restaurant__flex{
+     width: 100%;
+ }
 }
     
 @media (min-width: 1020px) {
@@ -127,6 +205,19 @@ body{
  }
 
  .hero__text{
+     font-size: 50px;
+ }
+ .explore__menu__list{
+     gap: 20px;
+     padding: 0 20px;
+ }
+ .explore__menu__text{
+     font-size: 50px;
+ }
+ .restaurants__container{
+     margin-top: 30px;
+ }
+ .restaurants__description{
      font-size: 50px;
  }
 }
