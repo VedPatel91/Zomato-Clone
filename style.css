@@ -143,7 +143,7 @@ body{
 .email__subcribe__input__field{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+
 }
 .text-xl{
     font-size: 30px;
@@ -157,12 +157,70 @@ body{
     font-weight: 700;
     border-radius: 4px;
     padding: 10px;
+    margin-right: 20px;
 }
 .email__input::placeholder {
     color: #bdbcbc;
   }
 
+/* quote */
+.quote__container {
+    position: relative;
+    margin-top: 50px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 200px;
+    width: 100%;
+    border-radius: 13px;
+    background: url("https://images.unsplash.com/photo-1522336572468-97b06e8ef143?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=755&q=80")
+      
+  }
+  .quote_image_overlay {
+    position: absolute;
+    height: 200px;
+    width: 100%;
+    border-radius: 13px;
+    background-color: #0a4065;
+    opacity: 49%;
+  }
+  .quote_image_text {
+    color: #fff;
+    z-index: 3;
+    margin: 0 10px;
+    text-align: center;
 
+  }
+
+  /* footer */
+  footer{
+      margin-top: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      background-image: linear-gradient(
+        to right,
+        #ff512f 0%,
+        #dd2476 51%,
+        #ff512f 100%
+    );
+    border-radius: 8px 8px 0 0;
+      
+  }
+  footer > img {
+    width: 300px;
+    filter: brightness(0) invert(1);
+  }
+  footer > ul {
+    margin-top: -1rem;
+      color: #fff;
+  }
+  footer > ul > li {
+    margin: 5px 0;
+  }
+  
 @media (min-width: 768px) {
 .navbar{
     justify-content: space-between;
@@ -227,6 +285,11 @@ body{
      display: flex;
      justify-content: center;
  }
+ footer{
+     display: flex;
+     flex-direction: row;
+     justify-content: space-evenly;
+ }
  
  
 }
@@ -252,6 +315,19 @@ body{
  .restaurants__description{
      font-size: 50px;
  }
+ .text-xl{
+     font-size: 50px;
+ }
+ .quote_image_text{
+     font-size: 40px;
+ }
+ .quote__container{
+     height: 300px;
+ }
+ .quote_image_overlay{
+     height: 300px;
+ }
+
 }
 
 @media (min-width: 1400px) {
